@@ -1,5 +1,5 @@
 async function fetchRandomQuote() {
-  let url = "http://127.0.0.1:3000/";
+  let url = "https://anosidium-quote-backend.trainees.hosting.cyf.academy";
 
   try {
     const response = await fetch(url);
