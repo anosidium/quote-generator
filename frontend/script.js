@@ -1,4 +1,4 @@
-async function fetchQuote() {
+async function fetchRandomQuote() {
   let url = "http://127.0.0.1:3000/";
 
   try {
@@ -21,4 +21,9 @@ async function fetchQuote() {
   }
 }
 
-window.onload = fetchQuote;
+const randomQuoteButton = document.getElementById("random-quote-button");
+
+window.onload = () => {
+  fetchRandomQuote();
+  randomQuoteButton.addEventListener("click", fetchRandomQuote);
+};
