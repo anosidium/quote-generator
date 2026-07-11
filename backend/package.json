@@ -1,0 +1,12 @@
+{
+  "name": "random-quotes-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node random_quotes.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
